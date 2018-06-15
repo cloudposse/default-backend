@@ -162,7 +162,7 @@
     </p>
     </div>
     <div class="buttons-container">
-        <a class="border-button" href="mailto:{{ .Values.errors.default.email }}" target="_blank">Report A Problem</a>
+      <a class="border-button" href="mailto:{{ getenv "EMAIL" }}" target="_blank">Report A Problem</a>
     </div>
 </div>
     <script>
