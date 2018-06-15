@@ -11,6 +11,10 @@ Basically, a default backend reponds to two URLs:
 - `/healthz` that returns 200
 - `/` that returns 404
 
+## Demo
+
+![Screenshot](docs/demo.png)
+
 ## Usage
 
 ```
