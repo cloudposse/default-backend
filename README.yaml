@@ -1,0 +1,62 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: default-backend
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Canonical GitHub repo
+github_repo: cloudposse/default-backend
+
+# Badges to display
+badges:
+  - name: "Build Status"
+    image: "https://travis-ci.org/cloudposse/default-backend.svg?branch=master"
+    url: "https://travis-ci.org/cloudposse/default-backend"
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/cloudposse/default-backend.svg"
+    url: "https://travis-ci.org/cloudposse/default-backend/releases"
+  - name: "Slack Community"
+    image: "https://slack.cloudposse.com/badge.svg"
+    url: "https://slack.cloudposse.com"
+
+related:
+  - name: "terraform-aws-alb"
+    description: "Terraform module to provision a standard ALB for HTTP/HTTP traffic"
+    url: "https://github.com/cloudposse/terraform-aws-alb"
+
+# Short description of this project
+description: |-
+  This is a default-backend server powered by Nginx. It's purpuse is to serve as a default backend for an ALB default target group with the [`terraform-aws-alb`](https://github.com/cloudposse/terraform-aws-alb) module	, much the way a [`nginx-default-backend`](https://github.com/cloudposse/charts/blob/master/incubator/nginx-default-backend/) is used with ingress controllers for kubernetes.
+
+  The default backend is an HTTP service that handles all URL paths and hosts that the ALB does not understand (i.e., all the requests that are not mapped with an Ingress).
+
+  Basically, a default backend reponds to two URLs:
+
+  - `/healthz` that returns 200
+  - `/` that returns 404
+
+  ## Demo
+
+  ![Screenshot](docs/demo.png)
+
+
+# How to use this project
+usage: |-
+  ```
+  docker run -p 1234:80 clouposse/default-backend:latest
+  ```
+
+
+# Contributors to this project
+contributors:
+  - name: "Erik Osterman"
+    github: "osterman"
