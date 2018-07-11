@@ -45,14 +45,14 @@ description: |-
 
   The default backend is an HTTP service that handles all URL paths and hosts that the ALB does not understand (i.e., all the requests that are not mapped with an Ingress).
 
-  Basically, a default backend reponds to two URLs:
+  Basically, a default backend responds to two URLs:
 
   - `/healthz` that returns 200
   - `/` that returns 404
 
 screenshots:
   - name: "Demo"
-    description: "Demo"
+    description: "Example of the default 404 status page returned by backend"
     url: "docs/demo.png"
 
 # How to use this project

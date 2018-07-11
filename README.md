@@ -9,7 +9,7 @@ This is a default-backend server powered by Nginx. It's purpuse is to serve as a
 
 The default backend is an HTTP service that handles all URL paths and hosts that the ALB does not understand (i.e., all the requests that are not mapped with an Ingress).
 
-Basically, a default backend reponds to two URLs:
+Basically, a default backend responds to two URLs:
 
 - `/healthz` that returns 200
 - `/` that returns 404
@@ -29,7 +29,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 
 ![Demo](docs/demo.png)
-*Demo*
+*Example of the default 404 status page returned by backend*
 
 
 ## Usage
