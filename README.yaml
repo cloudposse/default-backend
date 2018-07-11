@@ -19,11 +19,11 @@ github_repo: cloudposse/default-backend
 # Badges to display
 badges:
   - name: "Build Status"
-    image: "https://travis-ci.org/cloudposse/default-backend.svg?branch=master"
-    url: "https://travis-ci.org/cloudposse/default-backend"
+    image: "https://g.codefresh.io/api/badges/build?repoOwner=cloudposse&repoName=default-backend&branch=master&pipelineName=default-backend&accountName=cloudposse"
+    url: "https://g.codefresh.io/api/badges/build?repoOwner=cloudposse&repoName=default-backend&branch=master&pipelineName=default-backend&accountName=cloudposse"
   - name: "Latest Release"
     image: "https://img.shields.io/github/release/cloudposse/default-backend.svg"
-    url: "https://travis-ci.org/cloudposse/default-backend/releases"
+    url: "https://github.com/cloudposse/default-backend/releases/latest"
   - name: "Slack Community"
     image: "https://slack.cloudposse.com/badge.svg"
     url: "https://slack.cloudposse.com"
@@ -32,6 +32,12 @@ related:
   - name: "terraform-aws-alb"
     description: "Terraform module to provision a standard ALB for HTTP/HTTP traffic"
     url: "https://github.com/cloudposse/terraform-aws-alb"
+  - name: "terraform-aws-alb-ingress"
+    description: "Terraform module to provision an HTTP style ingress rule based on hostname and path for an ALB using target groups"
+    url: "https://github.com/cloudposse/terraform-aws-alb-ingress"
+  - name: "terraform-aws-ecs-web-app"
+    description: "Terraform module that implements a web app on ECS and supporting AWS resources."
+    url: "https://github.com/cloudposse/terraform-aws-ecs-web-app"
 
 # Short description of this project
 description: |-
@@ -44,10 +50,10 @@ description: |-
   - `/healthz` that returns 200
   - `/` that returns 404
 
-  ## Demo
-
-  ![Screenshot](docs/demo.png)
-
+screenshots:
+  - name: "Demo"
+    description: "Demo"
+    url: "docs/demo.png"
 
 # How to use this project
 usage: |-
