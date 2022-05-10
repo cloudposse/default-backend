@@ -58,7 +58,7 @@ screenshots:
 # How to use this project
 usage: |-
   ```
-  docker run -p 1234:80 clouposse/default-backend:latest
+  docker run -p 1234:80 cloudposse/default-backend:latest
   ```
 
 
